@@ -28,7 +28,12 @@
 }
 
 .menu.superior {
-  display: none;
+  @media (min-width:980px) {
+    display: none;
+  }
+  @media (max-width:979px) {
+    display: block;
+  }
 }
 
 .selos {
