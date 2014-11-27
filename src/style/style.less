@@ -1,3 +1,4 @@
+@import "includes/variables";
 @import "includes/social-media";
 
 .fundo-secundario {
@@ -42,7 +43,7 @@
 }
 
 .fundo-secundario, .fundo-secundario *, .fundo-secundario *:hover, .fundo-secundario:hover, .fundo-secundario.botao:hover {
-  color: #703693;
+  color: @color1;
 }
 
 /* mais vendidos */
@@ -51,11 +52,11 @@
   border-width: 0 1px 1px 0 !important;
   width: 99px !important;
   background-color: #EEE !important;
-  color: #703693 !important;
+  color: @color1 !important;
 }
 
 .sugestoes .ver-mais:hover {
-  background-color: #703693 !important;
+  background-color: @color1 !important;
   color: #EEE !important;
 }
 
@@ -87,7 +88,7 @@
 
 a {
   font-weight: 600;
-  color: #703693;
+  color: @color1;
 }
 
 .banner.vitrine p {
@@ -125,8 +126,7 @@ a {
 }
 
 .bandeira-promocao {
-//  display: none;
-  background-color: #000;
+  background-color: @color1;
 }
 .bandeira-promocao:after {
   content: ' Black Friday';
