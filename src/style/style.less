@@ -1,5 +1,6 @@
 @import "includes/variables";
 @import "includes/social-media";
+@import "includes/ui-matter";
 @import "includes/header";
 
 body.pagina-pagina {
@@ -24,6 +25,7 @@ body.pagina-pagina {
 
 .listagem-item{
   /*background-color: #fff !important;*/
+	padding-top: 0 !important;
 }
 
 #rodape .institucional {
@@ -50,10 +52,6 @@ body.pagina-pagina {
   border-width: 0;
 }
 
-#listagemProdutos h4 {
-  display: none;
-}
-
 .fundo-secundario, .fundo-secundario *, .fundo-secundario *:hover, .fundo-secundario:hover, .fundo-secundario.botao:hover {
   color: @color1;
 }
@@ -74,6 +72,7 @@ body.pagina-pagina {
 .sugestoes .ver-mais:hover {
   background-color: @color1 !important;
   color: #EEE !important;
+  text-decoration: none;
 }
 
 .sugestoes .comprar {
@@ -142,9 +141,42 @@ a {
 }
 
 .bandeira-promocao {
-  background-color: @color1;
+  display: none;
 }
 
-//.bandeira-promocao:after {
-//  content: ' Black Friday';
-//}
+/* ACTIONS BUTTONS */
+
+.botao-comprar.grande, .botao.principal.grande {
+	background-color: @action-color !important;
+}
+
+/* REMOVE PREÇO DE */
+
+.preco-produto {
+	.preco-venda {
+		display: none;
+	}
+}
+#listagemProdutos {
+	h4 {
+		display: none;
+	}
+	.preco-produto {
+		margin-top: -10px;
+	}
+}
+.aproveite-tambem {
+	.preco-produto {
+		margin-top: -20px;
+	}
+}
+.mais-vendidos {
+	.preco-produto {
+		.preco-promocional {
+			margin-top: 11px;
+		}
+	}
+}
+.tabela-carrinho .preco-produto .preco-venda {
+	display: none;
+}
