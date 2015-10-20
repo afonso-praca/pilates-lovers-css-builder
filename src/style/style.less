@@ -58,8 +58,17 @@ body.pagina-pagina {
 	}
 }
 
-.listagem .listagem-linha {
-  border-width: 0;
+.listagem {
+	.titulo-categoria {
+		margin-top: 25px;
+	}
+	.listagem-linha {
+		border-width: 0;
+		padding-top: 0;
+		&:first-child {
+			padding-top: 0;
+		}
+	}
 }
 
 .fundo-secundario, .fundo-secundario *, .fundo-secundario *:hover, .fundo-secundario:hover, .fundo-secundario.botao:hover {
@@ -110,8 +119,17 @@ a {
   color: @color1;
 }
 
-.banner.vitrine p {
-  display: none;
+.banner.vitrine {
+	margin-bottom: 20px !important;
+	p {
+		display: none;
+	}
+}
+
+.secao-principal {
+	.banner {
+		margin-bottom: 2px;
+	}
 }
 
 /* produtos relacionados */
@@ -139,7 +157,7 @@ a {
 }
 
 .bandeira-promocao {
-  display: none;
+  display: none !important;
 }
 
 .category-infantil {
