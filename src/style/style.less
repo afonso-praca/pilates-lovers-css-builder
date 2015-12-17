@@ -7,7 +7,7 @@
 
 @media (min-width:1180px) {
 	body {
-		background: #fff url(https://cdn.awsli.com.br/67/67849/arquivos/body-bg.jpg) no-repeat center 0;
+		background: #fff;
 		height: 100%;
 	}
 }
@@ -72,7 +72,9 @@ body.pagina-pagina {
 
 .listagem {
 	.titulo-categoria {
-		margin-top: 25px;
+		margin-top: 0;
+		color: #767676;
+		text-transform: uppercase;
 	}
 	.listagem-linha {
 		border-width: 0;
@@ -201,7 +203,7 @@ a {
 		margin: 0 0 -5px 0;
 	}
 	.preco-produto {
-		margin-top: -10px;
+		margin-top: 2px !important;
 	}
 }
 
@@ -269,4 +271,21 @@ a {
 		color: #996DCA;
 		font-weight: bold;
 	}
+}
+
+.titulo {
+	color: #737373;
+	text-transform: uppercase;
+}
+
+.listagem .produtos-carrossel .listagem-linha li .listagem-item {
+	margin-top: 0;
+}
+
+.borda-principal, .atributos ul li a:hover, .atributos ul li.active a, .tema-scuro .nav-tabs li.active a, .elastislide-carousel ul li.active a {
+	border-color: #A3A3A3;
+}
+
+.info-produto .preco-venda {
+	margin-top: 2px !important;
 }
