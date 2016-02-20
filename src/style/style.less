@@ -55,19 +55,24 @@ body.pagina-pagina {
 }
 
 .menu.superior {
-  @media (min-width:980px) {
-    display: none;
+  margin-top: 5px;
+  background-color: rgba(0,0,0,0.04);
+  .nivel-um {
+    li {
+      .titulo {
+        margin: 7px 0;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
   }
-  @media (max-width:979px) {
-    display: block;
+  @media (max-width: 767px) {
+    .nivel-um {
+      li {
+        background-color: @cinza-claro-2;
+      }
+    }
   }
-	@media (max-width: 767px) {
-		.nivel-um {
-			li {
-				background-color: @cinza-claro-2;
-			}
-		}
-	}
 }
 
 .listagem {
@@ -114,13 +119,17 @@ body.pagina-pagina {
 
 /* outras categorias na pagina de categoria */
 
-.menu.lateral.outras {
-  margin-top: -20px;
+.menu.lateral {
+  display: none;
 }
 
-.menu.lateral.outras li .titulo {
-  font-size: 16px;
-}
+//.menu.lateral.outras {
+//  margin-top: -20px;
+//}
+//
+//.menu.lateral.outras li .titulo {
+//  font-size: 16px;
+//}
 
 .menu .nivel-dois li:hover, .menu.lateral.outras .nivel-um li:hover a {
   background-color: #FFF;
